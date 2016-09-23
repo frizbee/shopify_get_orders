@@ -1,0 +1,27 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Orders</h1>
+    </header>
+
+    <ul>
+      {{#each orders}}
+        {{> item}}
+      {{/each}}
+    </ul>
+  </div>
+  <p>
+  json: {{> s}}
+  </p>
+</body>
+ 
+<template name="item">
+  <li>{{id}}</li>
+</template>
+
+<template name="s">
+  <!--{{testHelper "value1" "value2"}}-->
+  {{#each func}}
+  {{id}}
+  {{/each}}
+</template>
